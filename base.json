@@ -1,0 +1,34 @@
+{
+  "man": {
+    "shoes": [
+      {
+        "brand": "Adidas",
+        "model": "Gazelle",
+        "price": 120,
+        "sizes": [40, 41, 42, 45],
+        "images": ["images/gazzele/img-0.avif"]
+      },
+      {
+        "brand": "Adidas",
+        "model": "Grand Court",
+        "price": 120,
+        "sizes": [40, 41, 43, 45],
+        "images": ["images/GrandCourt/img-0.avif"]
+      },
+      {
+        "brand": "Nike",
+        "model": "Dunk low",
+        "price": 120,
+        "sizes": [40, 42, 43, 45],
+        "images": ["images/DunkLowRetro/dunk-low-0.avif"]
+      },
+      {
+        "brand": "Nike",
+        "model": "Airmax",
+        "price": 120,
+        "sizes": [40, 41, 42, 46],
+        "images": ["images/DunkLowRetro/dunk-low-0.avif"]
+      }
+    ]
+  }
+}
