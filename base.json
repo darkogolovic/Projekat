@@ -6,135 +6,401 @@
         "model": "Gazelle",
         "price": 120,
         "sizes": [40, 41, 42, 45],
-        "images": ["images/gazzele-0.avif"]
+        "images": [
+          "images/gazzele-0.avif",
+          "images/gazzele-1.avif",
+          "images/gazzele-2.avif"
+        ]
       },
       {
         "brand": "Adidas",
-        "model": "Grand Court",
+        "model": "Samba",
         "price": 120,
         "sizes": [40, 41, 43, 45],
-        "images": ["images/GrandCourt/img-0.avif"]
+        "images": [
+          "images/samba-0.avif",
+          "images/samba-1.avif",
+          "images/samba-2.avif"
+        ]
       },
       {
         "brand": "Nike",
         "model": "Dunk low",
         "price": 120,
         "sizes": [40, 42, 43, 45],
-        "images": ["images/DunkLowRetro/dunk-low-0.avif"]
+        "images": [
+          "images/dunk-low-0.png",
+          "images/dunk-low-1.png",
+          "images/dunk-low-2.png"
+        ]
       },
       {
         "brand": "Nike",
         "model": "Airmax",
         "price": 120,
         "sizes": [40, 41, 42, 46],
-        "images": ["images/DunkLowRetro/dunk-low-0.avif"]
+        "images": [
+          "images/air-max-0.png",
+          "images/air-max-1.png",
+          "images/air-max-2.png"
+        ]
       },
       {
-        "brand": "Reebok",
-        "model": "Classic",
-        "price": 120,
+        "brand": "New Balance",
+        "model": "9060",
+        "price": 135,
         "sizes": [40, 41, 42, 45],
-        "images": ["images/Classic/img-0.avif"]
+        "images": [
+          "images/new-balance1-0webp.webp",
+          "images/new-balance1-1.webp",
+          "images/new-balance1-2.webp"
+        ]
       },
       {
-        "brand": "Reebok",
-        "model": "Classic 1",
-        "price": 120,
+        "brand": "New Balance",
+        "model": "Fresh Foam X Evoz ST",
+        "price": 130,
         "sizes": [40, 41, 42, 45],
-        "images": ["images/Classic1/img-0.avif"]
+        "images": ["images/nb-0.webp", "images/nb-1.webp", "images/nb-2.jpg"]
       }
     ],
 
     "shirts": [
       {
-        "brand": "Adidas",
-        "model": "Gazelle",
-        "price": 120,
-        "sizes": [40, 41, 42, 45],
-        "images": ["images/gazzele/img-0.avif"]
-      },
-      {
-        "brand": "Adidas",
-        "model": "Grand Court",
-        "price": 120,
-        "sizes": [40, 41, 43, 45],
-        "images": ["images/GrandCourt/img-0.avif"]
+        "brand": "Nike",
+        "model": "Premium Essentials",
+        "price": 42,
+        "sizes": ["XS", "S", "M", "L", "XL"],
+        "images": [
+          "images/Shirts/nikem1-0.png",
+          "images/Shirts/nikem1-1.png",
+          "images/Shirts/nikem1-2.jpg"
+        ]
       },
       {
         "brand": "Nike",
-        "model": "Dunk low",
-        "price": 120,
-        "sizes": [40, 42, 43, 45],
-        "images": ["images/DunkLowRetro/dunk-low-0.avif"]
+        "model": "Fit Running",
+        "price": 27,
+        "sizes": ["XS", "S", "M", "L", "XL"],
+        "images": [
+          "images/Shirts/nikem2-0.png",
+          "images/Shirts/nikem2-1.jpg",
+          "images/Shirts/nikem2-2.jpg"
+        ]
       },
       {
-        "brand": "Nike",
-        "model": "Airmax",
-        "price": 120,
-        "sizes": [40, 41, 42, 46],
-        "images": ["images/DunkLowRetro/dunk-low-0.avif"]
+        "brand": "Adidas",
+        "model": "Own The Run Tee",
+        "price": 28,
+        "sizes": ["XS", "S", "M", "L", "XL"],
+        "images": [
+          "images/Shirts/Adidas1-0.avif",
+          "images/Shirts/Adidas1-1.avif",
+          "images/Shirts/Adidas1-2.avif"
+        ]
       },
       {
-        "brand": "Reebok",
-        "model": "Classic",
-        "price": 120,
-        "sizes": [40, 41, 42, 45],
-        "images": ["images/Classic/img-0.avif"]
-      },
-      {
-        "brand": "Reebok",
-        "model": "Classic 1",
-        "price": 120,
-        "sizes": [40, 41, 42, 45],
-        "images": ["images/Classic1/img-0.avif"]
+        "brand": "Adidas",
+        "model": "ADICOLOR TREFOIL TEE",
+        "price": 30,
+        "sizes": ["L", "XL"],
+        "images": [
+          "images/Shirts/Adidas2-0.avif",
+          "images/Shirts/Adidas2-1.avif",
+          "images/Shirts/Adidas2-2.avif"
+        ]
       }
     ],
-    "jackets": [
+    "tracksuits": [
       {
         "brand": "Adidas",
-        "model": "Gazelle",
-        "price": 120,
-        "sizes": [40, 41, 42, 45],
-        "images": ["images/gazzele/img-0.avif"]
+        "model": "ADICOLOR Classics",
+        "price": 70,
+        "sizes": ["XS", "S", "M", "L", "XL"],
+        "images": [
+          "images/Tracksuits/Adidas1-0.avif",
+          "images/Tracksuits/Adidas1-1.avif",
+          "images/Tracksuits/Adidas1-2.avif"
+        ]
       },
       {
         "brand": "Adidas",
-        "model": "Grand Court",
-        "price": 120,
-        "sizes": [40, 41, 43, 45],
-        "images": ["images/GrandCourt/img-0.avif"]
+        "model": "Tiro 23",
+        "price": 55,
+        "sizes": ["XS", "S", "M", "L", "XL"],
+        "images": [
+          "images/Shirts/Adidas2-0.avif",
+          "images/Shirts/Adidas2-1.avif",
+          "images/Shirts/Adidas2-2.avif"
+        ]
+      },
+      {
+        "brand": "Under Armour",
+        "model": "Unstoppable Fleece Full-Zip",
+        "price": 80,
+        "sizes": ["XS", "S", "M", "L", "XL"],
+        "images": [
+          "images/Tracksuits/UA-0.webp",
+          "images/Tracksuits/UA-1.webp",
+          "images/Tracksuits/UA-2.webp"
+        ]
       },
       {
         "brand": "Nike",
-        "model": "Dunk low",
-        "price": 120,
-        "sizes": [40, 42, 43, 45],
-        "images": ["images/DunkLowRetro/dunk-low-0.avif"]
-      },
-      {
-        "brand": "Nike",
-        "model": "Airmax",
-        "price": 120,
-        "sizes": [40, 41, 42, 46],
-        "images": ["images/DunkLowRetro/dunk-low-0.avif"]
-      },
-      {
-        "brand": "Reebok",
-        "model": "Classic",
-        "price": 120,
-        "sizes": [40, 41, 42, 45],
-        "images": ["images/Classic/img-0.avif"]
+        "model": "Sportswear Tech Fleece",
+        "price": 115,
+        "sizes": ["XS", "S", "M", "L", "XL"],
+        "images": [
+          "images/Tracksuits/nike-0.jpg",
+          "images/Tracksuits/nike-1.jpg",
+          "images/Tracksuits/nike-2.png"
+        ]
       }
     ]
   },
   "women": {
-    "shoes": [],
-    "jackets": [],
-    "shirts": []
+    "shoes": [
+      {
+        "brand": "Nike",
+        "model": "Airmax 270",
+        "price": 140,
+        "sizes": [36, 37, 38, 39, 40, 41],
+        "images": [
+          "images/woman/Shoes/air-max-270-0.png",
+          "images/woman/Shoes/air-max-270-1.png",
+          "images/woman/Shoes/air-max-270-2.png"
+        ]
+      },
+      {
+        "brand": "Adidas",
+        "model": "Samba",
+        "price": 120,
+        "sizes": [36, 37, 38, 39, 40, 41],
+        "images": [
+          "images/woman/Shoes/wom-samba-0.avif",
+          "images/woman/Shoes/wom-samba-1.avif",
+          "images/woman/Shoes/wom-samba-2.avif"
+        ]
+      },
+      {
+        "brand": "Adidas",
+        "model": "Gazelle",
+        "price": 120,
+        "sizes": [36, 37, 38, 39, 40, 41],
+        "images": [
+          "images/woman/Shoes/wom-gazelle-0.avif",
+          "images/woman/Shoes/wom-gazelle-1.avif",
+          "images/woman/Shoes/wom-gazelle-2.avif"
+        ]
+      },
+      {
+        "brand": "Under Armour",
+        "model": "Turbulence 2 Running Shoes",
+        "price": 99,
+        "sizes": [36, 37, 38, 39, 40, 41],
+        "images": [
+          "images/woman/Shoes/UA-0.webp",
+          "images/woman/Shoes/UA-1.webp",
+          "images/woman/Shoes/UA-2.webp"
+        ]
+      }
+    ],
+    "shirts": [
+      {
+        "brand": "Under Armour",
+        "model": "Tiger Short Sleeve",
+        "price": 30,
+        "sizes": ["XS", "M", "MD", "L"],
+        "images": [
+          "images/woman/Shirts/UA-0.webp",
+          "images/woman/Shirts/UA-1.webp",
+          "images/woman/Shirts/UA-2.webp"
+        ]
+      },
+      {
+        "brand": "Adidas",
+        "model": "Own The Run 3",
+        "price": 28,
+        "sizes": ["XS", "M", "MD", "L"],
+        "images": [
+          "images/woman/Shirts/Adidas-0.avif",
+          "images/woman/Shirts/Adidas-1.avif",
+          "images/woman/Shirts/Adidas-2.avif"
+        ]
+      },
+      {
+        "brand": "Adidas",
+        "model": "ESSENTIALS RIB TANK TOP",
+        "price": 35,
+        "sizes": ["XS", "M", "MD", "L"],
+        "images": [
+          "images/woman/Shirts/Adidas2-0.avif",
+          "images/woman/Shirts/Adidas2-1.avif",
+          "images/woman/Shirts/Adidas2-2.avif"
+        ]
+      },
+      {
+        "brand": "Nike",
+        "model": "Sportswear Chill Knit",
+        "price": 40,
+        "sizes": ["XS", "M", "MD", "L"],
+        "images": [
+          "images/woman/Shirts/Nike-0.png",
+          "images/woman/Shirts/Nike-1.jpg",
+          "images/woman/Shirts/Nike-2.jpg"
+        ]
+      }
+    ],
+    "tracksuits": [
+      {
+        "brand": "Nike",
+        "model": "Women's Mid-Rise Pants",
+        "price": 70,
+        "sizes": ["XS", "S", "M", "L"],
+        "images": [
+          "images/woman/Tracksuits/nike-0.png",
+          "images/woman/Tracksuits/nike-1.png",
+          "images/woman/Tracksuits/nike-2.png"
+        ]
+      },
+      {
+        "brand": "Adidas",
+        "model": "ADIDAS X FARM RIO TIRO TRACK JACKET",
+        "price": 70,
+        "sizes": ["XS", "S", "M", "L"],
+        "images": [
+          "images/woman/Tracksuits/Adidas-0.avif",
+          "images/woman/Tracksuits/Adidas-1.avif",
+          "images/woman/Tracksuits/Adidas-2.avif"
+        ]
+      },
+      {
+        "brand": "Under Armour",
+        "model": "Rival Sport Windbreaker",
+        "price": 99,
+        "sizes": ["XS", "S", "M", "L"],
+        "images": [
+          "images/woman/Tracksuits/UA-0.webp",
+          "images/woman/Tracksuits/UA-1.webp",
+          "images/woman/Tracksuits/UA-2.webp"
+        ]
+      }
+    ]
   },
   "kids": {
-    "shoes": [],
-    "jackets": [],
-    "shirts": []
+    "shoes": [
+      {
+        "brand": "Under Armour",
+        "model": "Boys' Pre-School UA Assert 10 AC Running Shoes",
+        "price": 99,
+        "sizes": [29, 31, 33, 35],
+        "images": [
+          "images/kids/Shoes/UA-0.webp",
+          "images/kids/Shoes/UA-1.webp",
+          "images/kids/Shoes/UA-2.webp"
+        ]
+      },
+      {
+        "brand": "Adidas",
+        "model": "CAMPUS 00S SHOES",
+        "price": 120,
+        "sizes": [29, 31, 33, 35],
+        "images": [
+          "images/kids/Shoes/girls-0.avif",
+          "images/kids/Shoes/girls-1.avif",
+          "images/kids/Shoes/girls-2.avif"
+        ]
+      },
+      {
+        "brand": "Adidas",
+        "model": "NMD 360 SHOES KIDS",
+        "price": 70,
+        "sizes": [23, 25, 26, 27, 29],
+        "images": [
+          "images/kids/Shoes/a-0.avif",
+          "images/kids/Shoes/a-1.avif",
+          "images/kids/Shoes/a-2.avif"
+        ]
+      },
+      {
+        "brand": "Nike",
+        "model": "Air Max Dn",
+        "price": 109,
+        "sizes": [23, 25, 26, 27, 29],
+        "images": [
+          "images/Kids/Shoes/n-0.png",
+          "images/Kids/Shoes/n-1.jpg",
+          "images/Kids/Shoes/n-2.jpg"
+        ]
+      }
+    ],
+    "shirts": [
+      {
+        "brand": "Nike",
+        "model": "Little Kids' Doodlevision T-Shirt",
+        "price": 25,
+        "sizes": ["XS", "S", "M", "L"],
+        "images": [
+          "images/kids/Shirts/n-0.jpg",
+          "images/kids/Shirts/n-1.png",
+          "images/kids/Shirts/n-2.png"
+        ]
+      },
+      {
+        "brand": "Adidas",
+        "model": "Little Kids' CAMO TEE",
+        "price": 25,
+        "sizes": ["XS", "S", "M", "L"],
+        "images": [
+          "images/kids/Shirts/a-0.avif",
+          "images/kids/Shirts/a-1.avif",
+          "images/kids/Shirts/a-2.avif"
+        ]
+      },
+      {
+        "brand": "Under Armour",
+        "model": "Hybrid Print  Sleeve",
+        "price": 20,
+        "sizes": ["XS", "S", "M", "L"],
+        "images": [
+          "images/kids/Shirts/UA-0.webp",
+          "images/kids/Shirts/UA-1.webp"
+        ]
+      }
+    ],
+    "tracksuits": [
+      {
+        "brand": "Under Armour",
+        "model": "Kids' Unisex UA Wintuck",
+        "price": 99,
+        "sizes": ["XS", "S", "M", "L"],
+        "images": [
+          "images/Kids/Tracksuits/UA-0.webp",
+          "images/Kids/Tracksuits/UA-1.webp",
+          "images/Kids/Tracksuits/UA-2.webp"
+        ]
+      },
+      {
+        "brand": "Under Armour",
+        "model": "Brawler 2.0 Tapered Pants",
+        "price": 30,
+        "sizes": ["XS", "S", "M", "L"],
+        "images": [
+          "images/Kids/Tracksuits/ua1-0.jpg",
+          "images/Kids/Tracksuits/ua1-1.jpg"
+        ]
+      },
+      {
+        "brand": "Adidas",
+        "model": "ADICOLOR SST TRACK PANTS",
+        "price": 40,
+        "sizes": ["XS", "S", "M", "L"],
+        "images": [
+          "images/Kids/Tracksuits/a-0.avif",
+          "images/Kids/Tracksuits/a-1.avif",
+          "images/Kids/Tracksuits/a-2.avif"
+        ]
+      }
+    ]
   }
 }
