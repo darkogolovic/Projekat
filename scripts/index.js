@@ -7,24 +7,25 @@ const fectData = async () => {
 fectData().then((data) => {
   const products = document.querySelector(".products");
   let { man, women, kids } = { ...data };
-  console.log(man, women, kids);
-  man.shoes.forEach((shoe) => {
-    console.log(shoe);
-  });
-  /* for (category in data) {
+  for (artice in man) {
+    console.log(man[artice]);
+  }
+
+  for (category in data) {
     for (pod in data[category]) {
-      console.log(data[category][pod]);
-      if (category == "man" && pod == "shoes") {
+      if (category == "man" || category == "women" || category == "kids") {
         for (let i = 0; i < data[category][pod].length; i++) {
           products.innerHTML += `<article class="product show">
+          <div class="img-holder">
           <img
             src="${data[category][pod][i].images[0]}"
             alt="${data[category][pod][i].model}"
             class="product-img"
           />
+          </div>
           <div class="product-info">
 
-            <h2 class="product-name">${data[category][pod][i].brand},${data[category][pod][i].model}</h2>
+            <h2 class="product-name">${data[category][pod][i].brand} - ${data[category][pod][i].model}</h2>
             <p class="product-price">${data[category][pod][i].price}&euro;</p>
           </div>
           <button class="add-to-cart">Add to cart</button>
@@ -32,7 +33,7 @@ fectData().then((data) => {
         }
       }
     }
-  }*/
+  }
 });
 
 // Carousel script
@@ -95,4 +96,10 @@ dotsContainer.addEventListener("click", (e) => {
     });
     slides[index].classList.add("current-slide");
   }
+});
+
+const showMoreBtn = document.querySelector(".show-more");
+
+showMoreBtn.addEventListener("click", () => {
+  const productsSection = document.querySelector(".products-section");
 });

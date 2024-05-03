@@ -15,7 +15,7 @@ header {
   padding: 20px 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   padding-bottom: 2px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 .container {
@@ -138,33 +138,6 @@ header {
   align-items: center;
   gap: 8%;
 }
-
-.search {
-  padding: 12px;
-  flex-basis: 40%;
-  text-align: left;
-  font-size: 1.5rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-.search input {
-  border: none;
-  outline: none;
-  font-size: 1.5rem;
-  margin-left: 8px;
-  color: rgb(86, 85, 85);
-}
-.search label {
-  display: none;
-}
-.search input::placeholder {
-  font-size: 1.2rem;
-  color: rgb(212, 212, 209);
-}
-.search i {
-  color: rgb(212, 212, 209);
-}
-
 footer {
   width: 100%;
   box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.2);

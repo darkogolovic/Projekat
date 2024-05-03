@@ -24,7 +24,7 @@
           <nav>
             <ul class="categories">
               <li class="men">
-                <a href="">Men</a>
+                <a href="#">Men</a>
                 <ul class="dropdown">
                   <li><a href="">Shoes</a></li>
                   <li><a href="">Clothes</a></li>
@@ -59,16 +59,6 @@
           </nav>
         </div>
         <div class="top-right">
-          <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <label for="search-field">Search by categorie or article</label>
-            <input
-              type="search"
-              name="search"
-              id="search-field"
-              placeholder="Search by category"
-            />
-          </div>
           <div class="login">
             <a href="">Home</a>
             <a href="about.html">About us</a>
@@ -81,143 +71,88 @@
 
     <!-- Main-->
     <main>
-      <div class="container">
-        <section class="carousel">
-          <button class="carousel-button carousel-button-left">
-            <img src="images/Main slider/arrow-left-3-svgrepo-com.svg" alt="" />
-          </button>
-          <div class="carousel-track-container">
-            <ul class="carousel-track">
-              <li class="carousel-slide current-slide">
-                <img src="images/Main slider/slide-1.avif" alt="" />
-              </li>
-              <li class="carousel-slide">
-                <img src="images/Main slider/slide-2.jpg" alt="" />
-              </li>
-              <li class="carousel-slide">
-                <img src="images/Main slider/slide-3.jpg" alt="" />
-              </li>
-            </ul>
+      <section class="carousel">
+        <button class="carousel-button carousel-button-left">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <div class="carousel-track-container">
+          <ul class="carousel-track">
+            <li class="carousel-slide current-slide">
+              <img src="images/Main slider/16379_Comp_A_Desktop.jpg" alt="" />
+            </li>
+            <li class="carousel-slide">
+              <img src="images/Main slider/slide-2.jpg" alt="" />
+            </li>
+            <li class="carousel-slide">
+              <img src="images/Main slider/slide-3.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <button class="carousel-button carousel-button-right">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <div class="carousel-nav">
+          <button
+            class="carousel-indicator current-slide"
+            data-slide-to="0"
+          ></button>
+          <button class="carousel-indicator" data-slide-to="1"></button>
+          <button class="carousel-indicator" data-slide-to="2"></button>
+        </div>
+      </section>
+      <section class="brands">
+        <h2 class="section-title">BRANDS</h2>
+        <div class="brands-container">
+          <div class="brand">
+            <img src="images/Brands/adidas-svgrepo-com.svg" alt="Brand logo" />
           </div>
-          <button class="carousel-button carousel-button-right">
+          <div class="brand">
             <img
-              src="images/Main slider/arrow-right-3-svgrepo-com.svg"
-              alt=""
+              src="images/Brands/new-balance-2-logo-svgrepo-com.svg"
+              alt="Brand logo"
             />
-          </button>
-          <div class="carousel-nav">
-            <button
-              class="carousel-indicator current-slide"
-              data-slide-to="0"
-            ></button>
-            <button class="carousel-indicator" data-slide-to="1"></button>
-            <button class="carousel-indicator" data-slide-to="2"></button>
           </div>
-        </section>
+          <div class="brand">
+            <img
+              src="images/Brands/nike-3-logo-svgrepo-com.svg"
+              alt="Brand logo"
+            />
+          </div>
+          <div class="brand">
+            <img
+              src="images/Brands/puma-logo-svgrepo-com.svg"
+              alt="Brand logo"
+            />
+          </div>
+          <div class="brand">
+            <img src="images/Brands/Reebok_2019_logo.svg" alt="Brand logo" />
+          </div>
+          <div class="brand">
+            <img
+              src="images/Brands/under-armour-logo-svgrepo-com.svg"
+              alt="Brand logo"
+            />
+          </div>
+          <div class="brand">
+            <img
+              src="images/Brands/converse-logo3-logo-svgrepo-com.svg"
+              alt="Brand logo"
+            />
+          </div>
+          <div class="brand">
+            <img
+              src="images/Brands/the-north-face-1-logo-svgrepo-com.svg"
+              alt="Brand logo"
+            />
+          </div>
+        </div>
+      </section>
 
-        <section class="products-section">
-          <h1 class="section-title">Featured products</h1>
-          <div class="products">
-            <article class="product show">
-              <img
-                src="images/gazzele-0.avif"
-                alt="Product image"
-                class="product-img"
-              />
-              <div class="product-info">
-                <h2 class="product-name">Product name</h2>
-                <p class="product-price">$99.99</p>
-              </div>
-              <button class="add-to-cart">Add to cart</button>
-            </article>
-            <article class="product show">
-              <img
-                src="images/gazzele-0.avif"
-                alt="Product image"
-                class="product-img"
-              />
-              <div class="product-info">
-                <h2 class="product-name">Product name</h2>
-                <p class="product-price">$99.99</p>
-              </div>
-              <button class="add-to-cart">Add to cart</button>
-            </article>
-            <article class="product show">
-              <img
-                src="images/gazzele-0.avif"
-                alt="Product image"
-                class="product-img"
-              />
-              <div class="product-info">
-                <h2 class="product-name">Product name</h2>
-                <p class="product-price">$99.99</p>
-              </div>
-              <button class="add-to-cart">Add to cart</button>
-            </article>
-            <article class="product">
-              <img
-                src="images/gazzele-0.avif"
-                alt="Product image"
-                class="product-img"
-              />
-              <div class="product-info">
-                <h2 class="product-name">Product name</h2>
-                <p class="product-price">$99.99</p>
-              </div>
-              <button class="add-to-cart">Add to cart</button>
-            </article>
-            <article class="product">
-              <img
-                src="images/gazzele-0.avif"
-                alt="Product image"
-                class="product-img"
-              />
-              <div class="product-info">
-                <h2 class="product-name">Product name</h2>
-                <p class="product-price">$99.99</p>
-              </div>
-              <button class="add-to-cart">Add to cart</button>
-            </article>
-            <article class="product">
-              <img
-                src="images/gazzele-0.avif"
-                alt="Product image"
-                class="product-img"
-              />
-              <div class="product-info">
-                <h2 class="product-name">Product name</h2>
-                <p class="product-price">$99.99</p>
-              </div>
-              <button class="add-to-cart">Add to cart</button>
-            </article>
-            <article class="product">
-              <img
-                src="images/gazzele-0.avif"
-                alt="Product image"
-                class="product-img"
-              />
-              <div class="product-info">
-                <h2 class="product-name">Product name</h2>
-                <p class="product-price">$99.99</p>
-              </div>
-              <button class="add-to-cart">Add to cart</button>
-            </article>
-            <article class="product">
-              <img
-                src="images/gazzele-0.avif"
-                alt="Product image"
-                class="product-img"
-              />
-              <div class="product-info">
-                <h2 class="product-name">Product name</h2>
-                <p class="product-price">$99.99</p>
-              </div>
-              <button class="add-to-cart">Add to cart</button>
-            </article>
-          </div>
-          <button class="show-more">Show more</button>
-        </section>
-      </div>
+      <section class="products-section">
+        <h1 class="section-title">Featured products</h1>
+        <div class="products"></div>
+        <button class="show-more">Load more</button>
+      </section>
     </main>
     <footer>
       <div class="container">
