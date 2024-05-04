@@ -7,7 +7,7 @@ const fectData = async () => {
 fectData().then((data) => {
   const products = document.querySelector(".products");
   let { man, women, kids } = { ...data };
-  console.log(man["shoes"]);
+
   const padajuci = document.querySelectorAll(".dropdown");
   padajuci.forEach((element) => {
     element.addEventListener("click", (e) => {
@@ -15,17 +15,11 @@ fectData().then((data) => {
       e.stopPropagation();
       console.log(`${e.target.textContent.toLowerCase()}`);
 
-      console.log(
-        filter(e.currentTarget.parentElement.id)[
-          `${e.target.textContent.toLowerCase()}`
-        ]
-      );
-
       let podkategorija = filter(e.currentTarget.parentElement.id);
 
       products.innerHTML = "";
       podkategorija.forEach((element) => {
-        products.innerHTML += `<article class="product show">
+        products.innerHTML += `<article class="product show" data-id="${element.id}">
           <div class="img-holder">
           <img
             src="${element.images[0]}"
@@ -57,7 +51,7 @@ fectData().then((data) => {
     for (pod in data[category]) {
       if (category == "man" || category == "women" || category == "kids") {
         for (let i = 0; i < data[category][pod].length; i++) {
-          products.innerHTML += `<article class="product show">
+          products.innerHTML += `<article class="product show " data-id="${data[category][pod][i].id}">
           <div class="img-holder">
           <img
             src="${data[category][pod][i].images[0]}"
@@ -144,4 +138,38 @@ const showMoreBtn = document.querySelector(".show-more");
 
 showMoreBtn.addEventListener("click", () => {
   const productsSection = document.querySelector(".products-section");
+});
+
+// Single product script
+
+const openSingleProduct = document.querySelector(".products");
+
+openSingleProduct.addEventListener("click", async (e) => {
+  const productData = await fectData();
+
+  const productId = e.target.getAttribute("data-id");
+  console.log(productId);
+  const productArray = Object.keys(productData).map((key) => productData[key]);
+  let selectedProduct;
+  productArray.forEach((obj) => {
+    for (let podk in obj) {
+      for (let i = 0; i < obj[podk].length; i++) {
+        if (obj[podk][i].id == productId) {
+          selectedProduct = obj[podk][i];
+          console.log(selectedProduct);
+        }
+      }
+    }
+  });
+
+  if (selectedProduct) {
+    const productDataString = encodeURIComponent(
+      JSON.stringify(selectedProduct)
+    );
+
+    // Prenosenje podataka preko URla
+    window.location.href = `single-article.html?product=${productDataString}`;
+  } else {
+    console.error("Selected product not found");
+  }
 });

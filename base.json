@@ -2,6 +2,7 @@
   "man": {
     "shoes": [
       {
+        "id": 1,
         "brand": "Adidas",
         "model": "Gazelle",
         "price": 120,
@@ -13,6 +14,7 @@
         ]
       },
       {
+        "id": 2,
         "brand": "Adidas",
         "model": "Samba",
         "price": 120,
@@ -24,6 +26,7 @@
         ]
       },
       {
+        "id": 3,
         "brand": "Nike",
         "model": "Dunk low",
         "price": 120,
@@ -35,6 +38,7 @@
         ]
       },
       {
+        "id": 4,
         "brand": "Nike",
         "model": "Airmax",
         "price": 120,
@@ -46,6 +50,7 @@
         ]
       },
       {
+        "id": 5,
         "brand": "New Balance",
         "model": "9060",
         "price": 135,
@@ -57,6 +62,7 @@
         ]
       },
       {
+        "id": 6,
         "brand": "New Balance",
         "model": "Fresh Foam X Evoz ST",
         "price": 130,
@@ -67,6 +73,7 @@
 
     "shirts": [
       {
+        "id": 7,
         "brand": "Nike",
         "model": "Premium Essentials",
         "price": 42,
@@ -78,6 +85,7 @@
         ]
       },
       {
+        "id": 8,
         "brand": "Nike",
         "model": "Fit Running",
         "price": 27,
@@ -89,6 +97,7 @@
         ]
       },
       {
+        "id": 9,
         "brand": "Adidas",
         "model": "Own The Run Tee",
         "price": 28,
@@ -100,6 +109,7 @@
         ]
       },
       {
+        "id": 10,
         "brand": "Adidas",
         "model": "ADICOLOR TREFOIL TEE",
         "price": 30,
@@ -113,6 +123,7 @@
     ],
     "tracksuits": [
       {
+        "id": 11,
         "brand": "Adidas",
         "model": "ADICOLOR Classics",
         "price": 70,
@@ -124,6 +135,7 @@
         ]
       },
       {
+        "id": 12,
         "brand": "Adidas",
         "model": "Tiro 23",
         "price": 55,
@@ -135,6 +147,7 @@
         ]
       },
       {
+        "id": 13,
         "brand": "Under Armour",
         "model": "Unstoppable Fleece Full-Zip",
         "price": 80,
@@ -146,6 +159,7 @@
         ]
       },
       {
+        "id": 14,
         "brand": "Nike",
         "model": "Sportswear Tech Fleece",
         "price": 115,
@@ -161,6 +175,7 @@
   "women": {
     "shoes": [
       {
+        "id": 15,
         "brand": "Nike",
         "model": "Airmax 270",
         "price": 140,
@@ -172,6 +187,7 @@
         ]
       },
       {
+        "id": 16,
         "brand": "Adidas",
         "model": "Samba",
         "price": 120,
@@ -183,6 +199,7 @@
         ]
       },
       {
+        "id": 17,
         "brand": "Adidas",
         "model": "Gazelle",
         "price": 120,
@@ -194,6 +211,7 @@
         ]
       },
       {
+        "id": 18,
         "brand": "Under Armour",
         "model": "Turbulence 2 Running Shoes",
         "price": 99,
@@ -207,6 +225,7 @@
     ],
     "shirts": [
       {
+        "id": 19,
         "brand": "Under Armour",
         "model": "Tiger Short Sleeve",
         "price": 30,
@@ -218,6 +237,7 @@
         ]
       },
       {
+        "id": 20,
         "brand": "Adidas",
         "model": "Own The Run 3",
         "price": 28,
@@ -229,6 +249,7 @@
         ]
       },
       {
+        "id": 21,
         "brand": "Adidas",
         "model": "ESSENTIALS RIB TANK TOP",
         "price": 35,
@@ -240,6 +261,7 @@
         ]
       },
       {
+        "id": 22,
         "brand": "Nike",
         "model": "Sportswear Chill Knit",
         "price": 40,
@@ -253,6 +275,7 @@
     ],
     "tracksuits": [
       {
+        "id": 23,
         "brand": "Nike",
         "model": "Women's Mid-Rise Pants",
         "price": 70,
@@ -264,6 +287,7 @@
         ]
       },
       {
+        "id": 24,
         "brand": "Adidas",
         "model": "ADIDAS X FARM JACKET",
         "price": 70,
@@ -275,6 +299,7 @@
         ]
       },
       {
+        "id": 25,
         "brand": "Under Armour",
         "model": "Rival Sport Windbreaker",
         "price": 99,
@@ -290,6 +315,7 @@
   "kids": {
     "shoes": [
       {
+        "id": 26,
         "brand": "Under Armour",
         "model": "Boys' Assert 10 AC Running",
         "price": 99,
@@ -301,6 +327,7 @@
         ]
       },
       {
+        "id": 27,
         "brand": "Adidas",
         "model": "CAMPUS 00S SHOES",
         "price": 120,
@@ -312,6 +339,7 @@
         ]
       },
       {
+        "id": 28,
         "brand": "Adidas",
         "model": "NMD 360 SHOES KIDS",
         "price": 70,
@@ -323,6 +351,7 @@
         ]
       },
       {
+        "id": 29,
         "brand": "Nike",
         "model": "Air Max Dn",
         "price": 109,
@@ -336,6 +365,7 @@
     ],
     "shirts": [
       {
+        "id": 30,
         "brand": "Nike",
         "model": "Little Kids' Doodlevision T-Shirt",
         "price": 25,
@@ -347,6 +377,7 @@
         ]
       },
       {
+        "id": 31,
         "brand": "Adidas",
         "model": "Little Kids' CAMO TEE",
         "price": 25,
@@ -358,6 +389,7 @@
         ]
       },
       {
+        "id": 32,
         "brand": "Under Armour",
         "model": "Hybrid Print  Sleeve",
         "price": 20,
@@ -370,6 +402,7 @@
     ],
     "tracksuits": [
       {
+        "id": 33,
         "brand": "Under Armour",
         "model": "Kids' Unisex UA Wintuck",
         "price": 99,
@@ -381,6 +414,7 @@
         ]
       },
       {
+        "id": 34,
         "brand": "Under Armour",
         "model": "Brawler 2.0 Tapered Pants",
         "price": 30,
@@ -391,6 +425,7 @@
         ]
       },
       {
+        "id": 35,
         "brand": "Adidas",
         "model": "ADICOLOR SST TRACK PANTS",
         "price": 40,
