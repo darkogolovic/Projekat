@@ -7,9 +7,51 @@ const fectData = async () => {
 fectData().then((data) => {
   const products = document.querySelector(".products");
   let { man, women, kids } = { ...data };
-  for (artice in man) {
-    console.log(man[artice]);
-  }
+  console.log(man["shoes"]);
+  const padajuci = document.querySelectorAll(".dropdown");
+  padajuci.forEach((element) => {
+    element.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      console.log(`${e.target.textContent.toLowerCase()}`);
+
+      console.log(
+        filter(e.currentTarget.parentElement.id)[
+          `${e.target.textContent.toLowerCase()}`
+        ]
+      );
+
+      let podkategorija = filter(e.currentTarget.parentElement.id);
+
+      products.innerHTML = "";
+      podkategorija.forEach((element) => {
+        products.innerHTML += `<article class="product show">
+          <div class="img-holder">
+          <img
+            src="${element.images[0]}"
+            alt="${element.model}"
+            class="product-img"
+          />
+          </div>
+          <div class="product-info">
+          <h2 class="product-name">${element.brand} - ${element.model}</h2>
+          <p class="product-price">${element.price}&euro;</p>
+        </div>
+        <button class="add-to-cart">Add to cart</button>
+      </article>`;
+      });
+    });
+  });
+
+  const filter = function (e) {
+    if (e === "men") {
+      return "men";
+    } else if (e === "women") {
+      return "women";
+    } else if (e === "kids") {
+      return "kids";
+    }
+  };
 
   for (category in data) {
     for (pod in data[category]) {

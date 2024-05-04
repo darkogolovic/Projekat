@@ -1,0 +1,135 @@
+header {
+  margin-bottom: 0;
+}
+main {
+  display: flex;
+  height: 620px;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/login-bg.jpg);
+  background-size: cover;
+}
+
+.wrapper {
+  background: transparent;
+  max-width: 60%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.main-user-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n) {
+  justify-content: end;
+}
+
+.user-input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+
+.user-input-box label {
+  width: 95%;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.user-input-box input {
+  height: 40px;
+  width: 95%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 0 10px;
+}
+
+.gender-title {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+}
+
+.gender-category {
+  margin: 15px 0;
+  color: white;
+}
+
+.gender-category label {
+  padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input {
+  cursor: pointer;
+}
+
+.form-submit-btn {
+  margin-top: 40px;
+}
+
+.form-submit-btn input {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.form-submit-btn input:hover {
+  background: #ccc;
+}
+
+@media (max-width: 600px) {
+  .container {
+    min-width: 280px;
+  }
+
+  .user-input-box {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  .user-input-box:nth-child(2n) {
+    justify-content: space-between;
+  }
+
+  .gender-category {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .main-user-info {
+    max-height: 380px;
+    overflow: auto;
+  }
+
+  .main-user-info::-webkit-scrollbar {
+    width: 0;
+  }
+}

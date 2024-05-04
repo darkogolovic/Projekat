@@ -265,7 +265,7 @@
       },
       {
         "brand": "Adidas",
-        "model": "ADIDAS X FARM RIO TIRO TRACK JACKET",
+        "model": "ADIDAS X FARM JACKET",
         "price": 70,
         "sizes": ["XS", "S", "M", "L"],
         "images": [
@@ -291,7 +291,7 @@
     "shoes": [
       {
         "brand": "Under Armour",
-        "model": "Boys' Pre-School UA Assert 10 AC Running Shoes",
+        "model": "Boys' Assert 10 AC Running",
         "price": 99,
         "sizes": [29, 31, 33, 35],
         "images": [
