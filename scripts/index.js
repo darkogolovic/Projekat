@@ -6,71 +6,88 @@ const fectData = async () => {
 
 fectData().then((data) => {
   const products = document.querySelector(".products");
-  let { man, women, kids } = { ...data };
+  const productArray = Object.values(data).flatMap((category) => category);
+  initialState(productArray);
+  showMoreFunction();
+});
 
-  const padajuci = document.querySelectorAll(".dropdown");
-  padajuci.forEach((element) => {
-    element.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      console.log(`${e.target.textContent.toLowerCase()}`);
-
-      let podkategorija = filter(e.currentTarget.parentElement.id);
-
-      products.innerHTML = "";
-      podkategorija.forEach((element) => {
-        products.innerHTML += `<article class="product show" data-id="${element.id}">
-          <div class="img-holder">
-          <img
-            src="${element.images[0]}"
-            alt="${element.model}"
-            class="product-img"
-          />
-          </div>
-          <div class="product-info">
-          <h2 class="product-name">${element.brand} - ${element.model}</h2>
-          <p class="product-price">${element.price}&euro;</p>
-        </div>
-        <button class="add-to-cart">Add to cart</button>
-      </article>`;
-      });
-    });
-  });
-
-  const filter = function (e) {
-    if (e === "men") {
-      return "men";
-    } else if (e === "women") {
-      return "women";
-    } else if (e === "kids") {
-      return "kids";
-    }
-  };
-
-  for (category in data) {
-    for (pod in data[category]) {
-      if (category == "man" || category == "women" || category == "kids") {
-        for (let i = 0; i < data[category][pod].length; i++) {
-          products.innerHTML += `<article class="product show " data-id="${data[category][pod][i].id}">
-          <div class="img-holder">
-          <img
-            src="${data[category][pod][i].images[0]}"
-            alt="${data[category][pod][i].model}"
-            class="product-img"
-          />
-          </div>
-          <div class="product-info">
-
-            <h2 class="product-name">${data[category][pod][i].brand} - ${data[category][pod][i].model}</h2>
-            <p class="product-price">${data[category][pod][i].price}&euro;</p>
-          </div>
-          <button class="add-to-cart">Add to cart</button>
-        </article>`;
-        }
+const initialState = (productArray) => {
+  let prodSum = 0;
+  const products = document.querySelector(".products");
+  productArray.forEach((product) => {
+    for (podk in product) {
+      if (Array.isArray(product[podk])) {
+        product[podk].forEach((item) => {
+          products.innerHTML += `<article class="product ${item.category}" data-id="${item.id}">
+            <div class="img-holder">
+              <img src="${item.images[0]}" alt="${item.brand}" class="product-img"/>
+            </div>
+            <div class="product-info">
+              <h2 class="product-name">${item.brand} - ${item.model}</h2>
+              <p class="product-price">${item.price}&euro;</p>
+            </div>
+            <button class="add-to-cart">Add to cart</button>  
+          </article>`;
+          prodSum++;
+          if (prodSum <= 3) {
+            document
+              .querySelectorAll(".product")
+              .forEach((el) => el.classList.add("show"));
+          }
+        });
       }
     }
-  }
+  });
+};
+
+const filterButtons = document.querySelectorAll(".button-value");
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    let counter = 0;
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+    const selectedCategory = button.textContent.toLowerCase();
+    const products = document.querySelectorAll(".product");
+    products.forEach((product) => {
+      if (
+        selectedCategory === "all" ||
+        product.classList.contains(selectedCategory)
+      ) {
+        product.classList.add("show");
+      } else {
+        product.classList.remove("show");
+      }
+    });
+    document.querySelectorAll(".product").forEach((product) => {
+      if (product.classList.contains("show")) {
+        counter++;
+        if (counter <= 3) {
+          product.classList.add("show");
+        } else {
+          product.classList.remove("show");
+        }
+      }
+    });
+  });
 });
+const showMoreFunction = () => {
+  const showMore = document.querySelector(".show-more");
+  showMore.addEventListener("click", () => {
+    const visibleProducts = document.querySelectorAll(".product.show");
+
+    const hiddenProducts = document.querySelectorAll(".product:not(.show)");
+    const productCategory = document.querySelector(".product").classList[1];
+    let displayCount = 0;
+    hiddenProducts.forEach((product) => {
+      if (displayCount < 3) {
+        product.classList.add("show");
+        displayCount++;
+      } else {
+        product.classList.remove("show");
+      }
+    });
+  });
+};
 
 // Carousel script
 
@@ -173,3 +190,18 @@ openSingleProduct.addEventListener("click", async (e) => {
     console.error("Selected product not found");
   }
 });
+
+/*<article class="product show" data-id="${element[podk][i].id}">
+          <div class="img-holder">
+          <img
+            src="${element[podk][i].images[0]}"
+            alt="${element[podk][i].brand}"
+            class="product-img"
+          />
+          </div>
+          <div class="product-info">
+          <h2 class="product-name">${element[podk][i].brand} - ${element[podk][i].model}</h2>
+          <p class="product-price">${element[podk][i].price}&euro;</p>
+        </div>
+        <button class="add-to-cart">Add to cart</button>  
+      </article>`;*/

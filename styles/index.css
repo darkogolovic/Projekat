@@ -102,6 +102,7 @@ main {
   padding-top: 24px;
   border-top: 2px solid #babbbe;
   border-bottom: 2px solid #babbbe;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 .brands h2 {
   font-size: 2.5rem;
@@ -114,6 +115,64 @@ main {
   object-fit: cover;
 }
 
+/*filters*/
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 36px;
+  border-bottom: 2px solid #babbbe;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.filter-container h2 {
+  font-size: 2.5rem;
+}
+
+#search-container {
+  margin: 1em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+#search-container input {
+  background-color: transparent;
+  width: 50%;
+  border: none;
+  border-bottom: 2px solid #babbbe;
+  padding: 1em 0.5em;
+}
+#search-container input:focus {
+  border-bottom-color: #2b66d7;
+}
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #2b66d7;
+  color: #fff;
+  border-radius: 12px;
+}
+#buttons {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.button-value {
+  display: inline-flex;
+  border: 2px solid #2b66d7;
+  border-radius: 12px;
+  padding: 1em 2em;
+  background-color: transparent;
+  color: #2b66d7;
+  cursor: pointer;
+}
+.active {
+  background-color: #2b66d7;
+  color: #fff;
+}
 /*Products section*/
 
 .section-title {
@@ -141,6 +200,7 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 24px;
+  margin-bottom: 36px;
 }
 .product.show {
   display: flex;
@@ -207,7 +267,7 @@ main {
   margin: 8px;
   font-style: italic;
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   z-index: 999;
 }
 

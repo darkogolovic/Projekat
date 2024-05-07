@@ -29,18 +29,13 @@ header {
   width: 100%;
   object-fit: contain;
 }
-.header-right {
-  width: 70%;
-  display: flex;
-  flex-direction: column-reverse;
-  padding: 10px;
-  gap: 18px;
-}
 .navbar {
-  width: 100%;
+  width: 70%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  padding: 10px;
+  gap: 18px;
 }
 .navbar nav {
   width: 100%;
@@ -48,59 +43,28 @@ header {
   justify-content: space-between;
   position: relative;
 }
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 70%;
+}
 .navbar nav a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 10px 20px;
   display: inline-block;
-  width: 33%;
   color: #202124;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .navbar nav a i {
   color: #4584f8;
   font-size: 24px;
 }
-.categories {
-  list-style: none;
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-}
 
-.dropdown {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9cd;
-  min-width: 220px;
-  height: 300px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  list-style: none;
-  border-radius: 8px;
-}
-
-.dropdown li a {
-  color: black;
-  padding: 12px 16px;
-  min-width: 300px;
-  text-decoration: none;
-  display: block;
-  font-size: 16px;
-}
-
-.dropdown a:hover {
-  background-color: #f1f1f1;
-}
-
-.men:hover .dropdown,
-.women:hover .dropdown,
-.kids:hover .dropdown {
-  display: block;
-}
 #loginBtn,
 #registerBtn {
   font-size: 16px;
@@ -120,8 +84,11 @@ header {
 .icons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-basis: 30%;
+}
+.icons a {
+  width: 30%;
 }
 .cart-icon {
   display: inline-block;
@@ -135,7 +102,7 @@ header {
   color: #5f6368;
   text-transform: uppercase;
   position: relative;
-  padding: 0 16px;
+  width: 23%;
   border-right: 1px solid rgb(86, 85, 85);
 }
 .login a:last-child {
@@ -143,7 +110,7 @@ header {
 }
 .login a::after {
   content: "";
-  height: 2px;
+  height: 4px;
   width: 0;
   background: #4584f8;
   display: block;
@@ -151,15 +118,7 @@ header {
   transition: 0.5s ease;
 }
 .login a:hover::after {
-  width: 100%;
-}
-.top-right {
-  text-align: right;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 8%;
+  width: 70%;
 }
 
 /*Footer*/

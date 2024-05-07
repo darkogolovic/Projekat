@@ -7,3 +7,5 @@ const productData = JSON.parse(decodeURIComponent(productDataString));
 // Koristite podatke o proizvodu kako želite (npr. prikaz na stranici)
 const { brand, model, price, sizes, images } = productData;
 const articleContainer = document.querySelector(".article-container");
+
+console.log(productData);

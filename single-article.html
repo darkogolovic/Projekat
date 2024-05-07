@@ -13,50 +13,50 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="styles/single-article.css" />
   </head>
   <body>
     <header>
       <div class="logo-container">
         <img src="images/TSC logo.png" alt="The sports crew logo" />
       </div>
-      <div class="header-right">
-        <div class="navbar">
-          <nav>
-            <div class="categories">
-              <a href="">Men</a>
-              <a href="">Women</a>
-              <a href="">Kids</a>
-              <a href="">Brands</a>
-            </div>
+
+      <div class="navbar">
+        <nav>
+          <div class="login">
+            <a href="">Home</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+
+          <div class="icons">
             <a href="#" class="cart-icon"
               ><i class="fa-solid fa-cart-plus"></i
             ></a>
-          </nav>
-        </div>
-        <div class="top-right">
-          <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <label for="search-field">Search by categorie or article</label>
-            <input
-              type="search"
-              name="search"
-              id="search-field"
-              placeholder="Search by category"
-            />
+            <a href="login.html" id="loginBtn">Log in</a>
+            <a href="register.html" id="registerBtn">Register</a>
           </div>
-          <div class="login">
-            <a href="">Home</a>
-            <a href="#">About us</a>
-            <a href="#">Contact</a>
-            <a href="#">Log in</a>
-            <a href="#">Register</a>
-          </div>
-        </div>
+        </nav>
       </div>
     </header>
 
     <main>
-      <div class="article-container"></div>
+      <div class="article-container">
+        <div class="article-images">
+          <img src="images/Article image.png" alt="Article image" />
+          <img src="images/Article image.png" alt="Article image" />
+          <img src="images/Article image.png" alt="Article image" />
+        </div>
+
+        <div class="article-info">
+          <h1>Article title</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>155e</p>
+
+          <button>Add to cart</button>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="container">

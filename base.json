@@ -11,7 +11,8 @@
           "images/gazzele-0.avif",
           "images/gazzele-1.avif",
           "images/gazzele-2.avif"
-        ]
+        ],
+        "category": "men"
       },
       {
         "id": 2,
@@ -23,7 +24,8 @@
           "images/samba-0.avif",
           "images/samba-1.avif",
           "images/samba-2.avif"
-        ]
+        ],
+        "category": "men"
       },
       {
         "id": 3,
@@ -35,7 +37,8 @@
           "images/dunk-low-0.png",
           "images/dunk-low-1.png",
           "images/dunk-low-2.png"
-        ]
+        ],
+        "category": "men"
       },
       {
         "id": 4,
@@ -47,7 +50,8 @@
           "images/air-max-0.png",
           "images/air-max-1.png",
           "images/air-max-2.png"
-        ]
+        ],
+        "category": "men"
       },
       {
         "id": 5,
@@ -59,7 +63,8 @@
           "images/new-balance1-0webp.webp",
           "images/new-balance1-1.webp",
           "images/new-balance1-2.webp"
-        ]
+        ],
+        "category": "men"
       },
       {
         "id": 6,
@@ -67,7 +72,8 @@
         "model": "Fresh Foam X Evoz ST",
         "price": 130,
         "sizes": [40, 41, 42, 45],
-        "images": ["images/nb-0.webp", "images/nb-1.webp", "images/nb-2.jpg"]
+        "images": ["images/nb-0.webp", "images/nb-1.webp", "images/nb-2.jpg"],
+        "category": "men"
       }
     ],
 
@@ -82,7 +88,8 @@
           "images/Shirts/nikem1-0.png",
           "images/Shirts/nikem1-1.png",
           "images/Shirts/nikem1-2.jpg"
-        ]
+        ],
+        "category": "men"
       },
       {
         "id": 8,
@@ -94,7 +101,8 @@
           "images/Shirts/nikem2-0.png",
           "images/Shirts/nikem2-1.jpg",
           "images/Shirts/nikem2-2.jpg"
-        ]
+        ],
+        "category": "men"
       },
       {
         "id": 9,
@@ -106,7 +114,8 @@
           "images/Shirts/Adidas1-0.avif",
           "images/Shirts/Adidas1-1.avif",
           "images/Shirts/Adidas1-2.avif"
-        ]
+        ],
+        "category": "men"
       },
       {
         "id": 10,
@@ -118,7 +127,8 @@
           "images/Shirts/Adidas2-0.avif",
           "images/Shirts/Adidas2-1.avif",
           "images/Shirts/Adidas2-2.avif"
-        ]
+        ],
+        "category": "men"
       }
     ],
     "tracksuits": [
@@ -132,7 +142,8 @@
           "images/Tracksuits/Adidas1-0.avif",
           "images/Tracksuits/Adidas1-1.avif",
           "images/Tracksuits/Adidas1-2.avif"
-        ]
+        ],
+        "category": "men"
       },
       {
         "id": 12,
@@ -144,7 +155,8 @@
           "images/Shirts/Adidas2-0.avif",
           "images/Shirts/Adidas2-1.avif",
           "images/Shirts/Adidas2-2.avif"
-        ]
+        ],
+        "category": "men"
       },
       {
         "id": 13,
@@ -156,7 +168,8 @@
           "images/Tracksuits/UA-0.webp",
           "images/Tracksuits/UA-1.webp",
           "images/Tracksuits/UA-2.webp"
-        ]
+        ],
+        "category": "men"
       },
       {
         "id": 14,
@@ -168,7 +181,8 @@
           "images/Tracksuits/nike-0.jpg",
           "images/Tracksuits/nike-1.jpg",
           "images/Tracksuits/nike-2.png"
-        ]
+        ],
+        "category": "men"
       }
     ]
   },
@@ -184,7 +198,8 @@
           "images/woman/Shoes/air-max-270-0.png",
           "images/woman/Shoes/air-max-270-1.png",
           "images/woman/Shoes/air-max-270-2.png"
-        ]
+        ],
+        "category": "women"
       },
       {
         "id": 16,
@@ -196,7 +211,8 @@
           "images/woman/Shoes/wom-samba-0.avif",
           "images/woman/Shoes/wom-samba-1.avif",
           "images/woman/Shoes/wom-samba-2.avif"
-        ]
+        ],
+        "category": "women"
       },
       {
         "id": 17,
@@ -208,7 +224,8 @@
           "images/woman/Shoes/wom-gazelle-0.avif",
           "images/woman/Shoes/wom-gazelle-1.avif",
           "images/woman/Shoes/wom-gazelle-2.avif"
-        ]
+        ],
+        "category": "women"
       },
       {
         "id": 18,
@@ -220,7 +237,8 @@
           "images/woman/Shoes/UA-0.webp",
           "images/woman/Shoes/UA-1.webp",
           "images/woman/Shoes/UA-2.webp"
-        ]
+        ],
+        "category": "women"
       }
     ],
     "shirts": [
@@ -234,7 +252,8 @@
           "images/woman/Shirts/UA-0.webp",
           "images/woman/Shirts/UA-1.webp",
           "images/woman/Shirts/UA-2.webp"
-        ]
+        ],
+        "category": "women"
       },
       {
         "id": 20,
@@ -246,7 +265,8 @@
           "images/woman/Shirts/Adidas-0.avif",
           "images/woman/Shirts/Adidas-1.avif",
           "images/woman/Shirts/Adidas-2.avif"
-        ]
+        ],
+        "category": "women"
       },
       {
         "id": 21,
@@ -258,7 +278,8 @@
           "images/woman/Shirts/Adidas2-0.avif",
           "images/woman/Shirts/Adidas2-1.avif",
           "images/woman/Shirts/Adidas2-2.avif"
-        ]
+        ],
+        "category": "women"
       },
       {
         "id": 22,
@@ -270,7 +291,8 @@
           "images/woman/Shirts/Nike-0.png",
           "images/woman/Shirts/Nike-1.jpg",
           "images/woman/Shirts/Nike-2.jpg"
-        ]
+        ],
+        "category": "women"
       }
     ],
     "tracksuits": [
@@ -284,7 +306,8 @@
           "images/woman/Tracksuits/nike-0.png",
           "images/woman/Tracksuits/nike-1.png",
           "images/woman/Tracksuits/nike-2.png"
-        ]
+        ],
+        "category": "women"
       },
       {
         "id": 24,
@@ -296,7 +319,8 @@
           "images/woman/Tracksuits/Adidas-0.avif",
           "images/woman/Tracksuits/Adidas-1.avif",
           "images/woman/Tracksuits/Adidas-2.avif"
-        ]
+        ],
+        "category": "women"
       },
       {
         "id": 25,
@@ -308,7 +332,8 @@
           "images/woman/Tracksuits/UA-0.webp",
           "images/woman/Tracksuits/UA-1.webp",
           "images/woman/Tracksuits/UA-2.webp"
-        ]
+        ],
+        "category": "women"
       }
     ]
   },
@@ -324,7 +349,8 @@
           "images/kids/Shoes/UA-0.webp",
           "images/kids/Shoes/UA-1.webp",
           "images/kids/Shoes/UA-2.webp"
-        ]
+        ],
+        "category": "kids"
       },
       {
         "id": 27,
@@ -336,7 +362,8 @@
           "images/kids/Shoes/girls-0.avif",
           "images/kids/Shoes/girls-1.avif",
           "images/kids/Shoes/girls-2.avif"
-        ]
+        ],
+        "category": "kids"
       },
       {
         "id": 28,
@@ -348,7 +375,8 @@
           "images/kids/Shoes/a-0.avif",
           "images/kids/Shoes/a-1.avif",
           "images/kids/Shoes/a-2.avif"
-        ]
+        ],
+        "category": "kids"
       },
       {
         "id": 29,
@@ -360,7 +388,8 @@
           "images/Kids/Shoes/n-0.png",
           "images/Kids/Shoes/n-1.jpg",
           "images/Kids/Shoes/n-2.jpg"
-        ]
+        ],
+        "category": "kids"
       }
     ],
     "shirts": [
@@ -374,7 +403,8 @@
           "images/kids/Shirts/n-0.jpg",
           "images/kids/Shirts/n-1.png",
           "images/kids/Shirts/n-2.png"
-        ]
+        ],
+        "category": "kids"
       },
       {
         "id": 31,
@@ -386,7 +416,8 @@
           "images/kids/Shirts/a-0.avif",
           "images/kids/Shirts/a-1.avif",
           "images/kids/Shirts/a-2.avif"
-        ]
+        ],
+        "category": "kids"
       },
       {
         "id": 32,
@@ -397,7 +428,8 @@
         "images": [
           "images/kids/Shirts/UA-0.webp",
           "images/kids/Shirts/UA-1.webp"
-        ]
+        ],
+        "category": "kids"
       }
     ],
     "tracksuits": [
@@ -411,7 +443,8 @@
           "images/Kids/Tracksuits/UA-0.webp",
           "images/Kids/Tracksuits/UA-1.webp",
           "images/Kids/Tracksuits/UA-2.webp"
-        ]
+        ],
+        "category": "kids"
       },
       {
         "id": 34,
@@ -422,7 +455,8 @@
         "images": [
           "images/Kids/Tracksuits/ua1-0.jpg",
           "images/Kids/Tracksuits/ua1-1.jpg"
-        ]
+        ],
+        "category": "kids"
       },
       {
         "id": 35,
@@ -434,7 +468,8 @@
           "images/Kids/Tracksuits/a-0.avif",
           "images/Kids/Tracksuits/a-1.avif",
           "images/Kids/Tracksuits/a-2.avif"
-        ]
+        ],
+        "category": "kids"
       }
     ]
   }
