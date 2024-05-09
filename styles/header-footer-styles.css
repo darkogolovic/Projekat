@@ -96,7 +96,7 @@ header {
 }
 
 .cart-icon::after {
-  content: "0";
+  content: attr(data-count);
   display: inline-block;
   font-size: 1.3rem;
   text-decoration: none;
