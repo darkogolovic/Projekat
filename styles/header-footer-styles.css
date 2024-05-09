@@ -95,6 +95,19 @@ header {
   text-align: right;
 }
 
+.cart-icon::after {
+  content: "0";
+  display: inline-block;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #5f6368;
+  text-transform: uppercase;
+  position: relative;
+  width: 23%;
+  border-right: 1px solid rgb(86, 85, 85);
+  padding: 0 10px;
+}
+
 .login a {
   display: inline-block;
   font-size: 1.3rem;

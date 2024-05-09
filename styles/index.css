@@ -238,7 +238,7 @@ main {
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 8px;
   margin: 8px;
 }
 .add-to-cart:hover {

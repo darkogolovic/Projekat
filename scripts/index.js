@@ -26,7 +26,7 @@ const initialState = (productArray) => {
               <h2 class="product-name">${item.brand} - ${item.model}</h2>
               <p class="product-price">${item.price}&euro;</p>
             </div>
-            <button class="add-to-cart">Add to cart</button>  
+            <button class="add-to-cart read-more" data-id="${item.id}">Read more...</button>
           </article>`;
           prodSum++;
           if (prodSum <= 3) {
@@ -37,6 +37,11 @@ const initialState = (productArray) => {
         });
       }
     }
+  });
+  const openProductButtons = document.querySelectorAll(".read-more");
+
+  openProductButtons.forEach((button) => {
+    button.addEventListener("click", openSingleProduct);
   });
 };
 
@@ -89,68 +94,6 @@ const showMoreFunction = () => {
   });
 };
 
-// Carousel script
-
-const leftButton = document.querySelector(".carousel-button-left");
-const rightButton = document.querySelector(".carousel-button-right");
-const slides = document.querySelectorAll(".carousel-slide");
-const dotsContainer = document.querySelector(".carousel-nav");
-const dots = document.querySelectorAll(".carousel-indicator");
-
-let index = 0;
-
-rightButton.addEventListener("click", () => {
-  if (index < slides.length - 1) {
-    index++;
-    slides[index].classList.add("current-slide");
-    slides[index - 1].classList.remove("current-slide");
-  } else if (index === slides.length - 1) {
-    index = 0;
-    slides[index].classList.add("current-slide");
-    slides[slides.length - 1].classList.remove("current-slide");
-  }
-  updateDots(index);
-});
-
-leftButton.addEventListener("click", () => {
-  if (index > 0) {
-    index--;
-    slides[index].classList.add("current-slide");
-    slides[index + 1].classList.remove("current-slide");
-  } else if (index === 0) {
-    index = slides.length - 1;
-    slides[index].classList.add("current-slide");
-    slides[0].classList.remove("current-slide");
-  }
-
-  updateDots(index);
-});
-
-const updateDots = (currentSlide) => {
-  dots.forEach((dot, index) => {
-    if (index === currentSlide) {
-      dot.classList.add("current-slide");
-    } else {
-      dot.classList.remove("current-slide");
-    }
-  });
-};
-
-dotsContainer.addEventListener("click", (e) => {
-  if (e.target.classList.contains("carousel-indicator")) {
-    const currentSlide = e.target.getAttribute("data-slide-to");
-    index = currentSlide;
-    dots.forEach((dot) => {
-      dot.classList.remove("current-slide");
-    });
-    dots[index].classList.add("current-slide");
-    slides.forEach((slide) => {
-      slide.classList.remove("current-slide");
-    });
-    slides[index].classList.add("current-slide");
-  }
-});
-
 const showMoreBtn = document.querySelector(".show-more");
 
 showMoreBtn.addEventListener("click", () => {
@@ -159,23 +102,26 @@ showMoreBtn.addEventListener("click", () => {
 
 // Single product script
 
-const openSingleProduct = document.querySelector(".products");
-
-openSingleProduct.addEventListener("click", async (e) => {
+const openSingleProduct = async (e) => {
   const productData = await fectData();
-
   const productId = e.target.getAttribute("data-id");
-  console.log(productId);
-  const productArray = Object.keys(productData).map((key) => productData[key]);
+  console.log(
+    "All product IDs:",
+    Object.values(productData).flatMap((category) =>
+      Object.values(category).flatMap((item) =>
+        item.flatMap((subitem) => subitem.id)
+      )
+    )
+  );
+  console.log("Trying to find product with ID:", productId);
+  const productArray = Object.values(productData).flatMap((category) =>
+    Object.values(category).flatMap((subcategory) => subcategory)
+  );
   let selectedProduct;
-  productArray.forEach((obj) => {
-    for (let podk in obj) {
-      for (let i = 0; i < obj[podk].length; i++) {
-        if (obj[podk][i].id == productId) {
-          selectedProduct = obj[podk][i];
-          console.log(selectedProduct);
-        }
-      }
+  productArray.forEach((product) => {
+    if (product.id == productId) {
+      selectedProduct = product;
+      console.log("Selected product:", selectedProduct);
     }
   });
 
@@ -184,12 +130,12 @@ openSingleProduct.addEventListener("click", async (e) => {
       JSON.stringify(selectedProduct)
     );
 
-    // Prenosenje podataka preko URla
+    // Prenosenje podataka preko URL-a
     window.location.href = `single-article.html?product=${productDataString}`;
   } else {
     console.error("Selected product not found");
   }
-});
+};
 
 /*<article class="product show" data-id="${element[podk][i].id}">
           <div class="img-holder">

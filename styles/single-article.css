@@ -33,6 +33,7 @@
   grid-area: img1;
   width: 100%;
   height: 600px;
+  cursor: zoom-in;
 }
 .sub-img:first-child {
   grid-area: img2;
