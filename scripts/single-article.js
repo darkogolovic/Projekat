@@ -145,12 +145,3 @@ window.addEventListener("click", (e) => {
     cartModal.style.display = "none";
   }
 });
-
-/* <div class="cart-item">
-  <div class="cart-img">
-    <img src="${images[0]}" alt="${brand}" />
-  </div>
-  <p>${brand} - ${model}</p>
-  <h2>euro ${price}.00</h2>
-  <i class="fa-solid fa-trash-can"></i>
-</div> */

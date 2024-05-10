@@ -133,6 +133,14 @@ header {
 .login a:hover::after {
   width: 70%;
 }
+.bars-icon {
+  display: none;
+  padding: 8px;
+}
+.bars-icon i {
+  font-size: 32px;
+  color: #2b66d7;
+}
 
 /*Footer*/
 
@@ -193,4 +201,16 @@ footer {
 .links {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar nav {
+    display: none;
+  }
+  .bars-icon {
+    display: block;
+  }
+  .bars-icon i {
+    font-size: 42px;
+  }
 }
