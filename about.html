@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Sports Crew</title>
     <link rel="stylesheet" href="styles/header-footer-styles.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/about.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -35,9 +35,49 @@
           </div>
         </nav>
       </div>
+      <div class="dropdown">
+        <i class="fa-solid fa-xmark" id="dropdown-close"></i>
+        <nav>
+          <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+
+          <div class="log-buttons">
+            <a href="login.html" id="loginBtn">Log in</a>
+            <a href="register.html" id="registerBtn">Register</a>
+          </div>
+        </nav>
+      </div>
+      <div class="bars-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
 
-    <main></main>
+    <main>
+      <section class="about-section">
+        <h1 class="title">About us</h1>
+        <div class="about-img">
+          <img src="images/about1.jpg" alt="About us" />
+        </div>
+        <div class="about-text">
+          <p>
+            The Sports Crew offers a wide range of high-quality products
+            tailored to the needs of all active lifestyle enthusiasts.
+          </p>
+          <p>
+            We are committed to providing our customers with the best possible
+            service.
+          </p>
+          <p>
+            We have a team of experienced professionals who are passionate about
+            their craft.
+          </p>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="container">
         <div class="top-footer">
@@ -76,6 +116,7 @@
       <div class="bottom-footer">
         <p>&copy; The sports crew. All rights reserved.</p>
       </div>
+      <script src="scripts/bars-icon.js"></script>
     </footer>
   </body>
 </html>

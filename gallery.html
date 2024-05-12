@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Sports Crew</title>
     <link rel="stylesheet" href="styles/header-footer-styles.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -35,6 +35,25 @@
           </div>
         </nav>
       </div>
+      <div class="dropdown">
+        <i class="fa-solid fa-xmark" id="dropdown-close"></i>
+        <nav>
+          <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+
+          <div class="log-buttons">
+            <a href="login.html" id="loginBtn">Log in</a>
+            <a href="register.html" id="registerBtn">Register</a>
+          </div>
+        </nav>
+      </div>
+      <div class="bars-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
     <main>
       <section class="carousel">
@@ -44,7 +63,7 @@
         <div class="carousel-track-container">
           <ul class="carousel-track">
             <li class="carousel-slide current-slide">
-              <img src="images/Main slider/16379_Comp_A_Desktop.jpg" alt="" />
+              <img src="images/Main slider/slide-1.jpg" alt="" />
             </li>
             <li class="carousel-slide">
               <img src="images/Main slider/slide-2.jpg" alt="" />
@@ -107,5 +126,6 @@
       </div>
     </footer>
     <script src="scripts/gallery.js"></script>
+    <script src="scripts/bars-icon.js"></script>
   </body>
 </html>

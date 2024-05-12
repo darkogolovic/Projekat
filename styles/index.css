@@ -6,90 +6,20 @@
 main {
   margin-bottom: 24px;
 }
-.carousel {
-  width: 95%;
-  height: 700px;
-  margin: 0 auto;
+.index-img {
+  margin-bottom: 48px;
+  width: 100%;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.268);
-  margin-bottom: 60px;
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
 }
-
-.carousel-track img {
+.index-img img {
   width: 100%;
-  height: 100%;
-}
-.carousel-track-container {
-  height: 100%;
-}
-.carousel-track {
-  list-style: none;
-  height: 100%;
-  transition: transform 250ms ease-in;
-  display: flex;
-}
-.carousel-slide {
-  width: 100%;
-  display: none;
-}
-.current-slide {
-  display: block;
-}
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: 0;
-  z-index: 999;
-  cursor: pointer;
-  font-size: 40px;
-}
-.carousel-button-left {
-  left: 0;
-}
-.carousel-button-right {
-  right: 0;
-}
-.carousel-button i {
-  font-size: 48px;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  padding: 10px;
-}
-.carousel-button i:hover {
-  color: #4584f8;
-  border: 1px solid #4584f8;
-}
-.carousel-nav {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  position: absolute;
-  bottom: 0;
-  z-index: 999;
-  left: 0;
-  right: 0;
-}
-.carousel-indicator {
-  border: 0;
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-  background-color: #babbbe;
-  cursor: pointer;
-  margin: 0 15px;
-}
-.carousel-indicator.current-slide {
-  background-color: #4584f8;
+  object-fit: cover;
+  object-position: center;
 }
 
 /*brand section*/
 .brands {
-  margin-bottom: 36px;
+  margin-bottom: 48px;
 }
 .brands-container {
   width: 100%;
@@ -158,6 +88,7 @@ main {
   width: 80%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
 }
 .button-value {
@@ -206,7 +137,7 @@ main {
   display: flex;
 }
 .product {
-  flex-basis: 30%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -275,7 +206,12 @@ main {
   background-color: #5f6368;
 }
 
-/*@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+  .product {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 100%;
+  }
   .img-holder {
     width: 100%;
     height: 300px;
@@ -289,4 +225,4 @@ main {
     height: 200px;
     overflow: hidden;
   }
-}*/
+}

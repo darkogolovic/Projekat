@@ -137,17 +137,18 @@ const openSingleProduct = async (e) => {
   }
 };
 
-/*<article class="product show" data-id="${element[podk][i].id}">
-          <div class="img-holder">
-          <img
-            src="${element[podk][i].images[0]}"
-            alt="${element[podk][i].brand}"
-            class="product-img"
-          />
-          </div>
-          <div class="product-info">
-          <h2 class="product-name">${element[podk][i].brand} - ${element[podk][i].model}</h2>
-          <p class="product-price">${element[podk][i].price}&euro;</p>
-        </div>
-        <button class="add-to-cart">Add to cart</button>  
-      </article>`;*/
+// search script
+const searchInput = document.querySelector("#search-input");
+
+searchInput.addEventListener("input", (e) => {
+  const searchValue = e.target.value.toLowerCase();
+  const products = document.querySelectorAll(".product");
+  products.forEach((product) => {
+    const productName = product.querySelector(".product-name").textContent;
+    if (productName.toLowerCase().includes(searchValue)) {
+      product.classList.add("show");
+    } else {
+      product.classList.remove("show");
+    }
+  });
+});

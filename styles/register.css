@@ -3,7 +3,7 @@ header {
 }
 main {
   display: flex;
-  height: 620px;
+  height: 660px;
   justify-content: center;
   align-items: center;
   background: url(../images/login-bg.jpg);

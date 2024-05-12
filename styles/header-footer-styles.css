@@ -11,11 +11,11 @@ a {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 64px;
   padding: 20px 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   padding-bottom: 2px;
-  margin-bottom: 48px;
 }
 
 .container {
@@ -30,12 +30,12 @@ header {
   object-fit: contain;
 }
 .navbar {
-  width: 70%;
+  width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding: 10px;
-  gap: 18px;
+  padding-left: 64px;
 }
 .navbar nav {
   width: 100%;
@@ -44,10 +44,11 @@ header {
   position: relative;
 }
 .login {
+  width: 70%;
+  max-width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-basis: 70%;
 }
 .navbar nav a {
   font-size: 1.5rem;
@@ -84,8 +85,9 @@ header {
 .icons {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
   flex-basis: 30%;
+  gap: 12px;
 }
 .icons a {
   width: 30%;
@@ -203,7 +205,66 @@ footer {
   flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
+.dropdown {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px;
+  width: 50%;
+  background-color: #e5e7e9;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.dropdown nav {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.dropdown.nav-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12px;
+}
+.dropdown .nav-menu a {
+  font-size: 2rem;
+  color: #4584f8;
+  text-transform: capitalize;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.log-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.log-buttons a {
+  padding: 100px;
+}
+.dropdown i {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 2rem;
+  color: #4584f8;
+}
+@media screen and (max-width: 1600px) {
+  .navbar nav a {
+    font-size: 1rem;
+  }
+  .logo-container {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  header {
+    justify-content: space-around;
+  }
   .navbar nav {
     display: none;
   }
@@ -212,5 +273,14 @@ footer {
   }
   .bars-icon i {
     font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .top-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 12px;
   }
 }

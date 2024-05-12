@@ -35,6 +35,22 @@
           </div>
         </nav>
       </div>
+      <div class="dropdown">
+        <i class="fa-solid fa-xmark" id="dropdown-close"></i>
+        <nav>
+          <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+
+          <div class="log-buttons">
+            <a href="login.html" id="loginBtn">Log in</a>
+            <a href="register.html" id="registerBtn">Register</a>
+          </div>
+        </nav>
+      </div>
       <div class="bars-icon">
         <i class="fa-solid fa-bars"></i>
       </div>
@@ -42,6 +58,9 @@
 
     <!-- Main-->
     <main>
+      <section class="index-img">
+        <img src="images/index-img.jpg" alt="The sports crew" />
+      </section>
       <section class="brands">
         <h2 class="section-title">BRANDS</h2>
         <div class="brands-container">
@@ -92,9 +111,13 @@
       <section class="filter-container">
         <h2>Categories filter</h2>
         <div id="search-container">
-          <input type="search" id="search-input" placeholder="Search..." />
-          <button id="search">SEARCH</button>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search by name or brand..."
+          />
         </div>
+        <h3>Search by category</h3>
         <div id="buttons">
           <div class="button-value">All</div>
           <div class="button-value">Men</div>

@@ -85,10 +85,6 @@ cartIcon.addEventListener("click", () => {
   }
 });
 
-cartIcon.addEventListener("click", () => {
-  cart.style.display = "block";
-});
-
 let count = Number(localStorage.getItem("count")) || 0;
 let itemCounter = Number(localStorage.getItem("itemCounter")) || 0;
 
