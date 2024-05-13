@@ -64,26 +64,16 @@ function closeModal() {
 }
 
 // Cart modal
-
+localStorage.clear();
 const cart = document.querySelector(".cart");
 const addBtn = document.querySelector("#add");
 const cartItem = document.querySelector("#cart-item");
 const totalPrice = document.querySelector("#total-price");
 cartItem.innerHTML = localStorage.getItem("cartItem");
-totalPrice.innerHTML = "&euro;" + " " + localStorage.getItem("count");
+totalPrice.innerHTML = "&euro;" + " " + localStorage.getItem("count") || 0;
 const cartIcon = document.querySelector(".cart-icon");
 const cartModal = document.querySelector(".cart-modal");
 const cartClose = document.querySelector(".cart-close");
-
-cartIcon.addEventListener("click", () => {
-  cartModal.style.display = "block";
-  if (
-    localStorage.getItem("itemCounter") == 0 ||
-    !localStorage.getItem("itemCounter")
-  ) {
-    cartItem.innerHTML = `<h2>Your cart is empty</h2>`;
-  }
-});
 
 let count = Number(localStorage.getItem("count")) || 0;
 let itemCounter = Number(localStorage.getItem("itemCounter")) || 0;
@@ -91,6 +81,11 @@ let itemCounter = Number(localStorage.getItem("itemCounter")) || 0;
 cartIcon.setAttribute("data-count", itemCounter);
 
 addBtn.addEventListener("click", () => {
+  console.log(cartItem.firstChild);
+  if (cartItem.firstChild === `<h2>Your cart is empty</h2>`) {
+    cartItem.firstChild.innerHTML = `<h2>Cart item</h2>`;
+  }
+
   cartItem.innerHTML += `<div class="cart-item">
   <div class="cart-img">
     <img src="${images[0]}" alt="${brand}" />
@@ -132,6 +127,9 @@ const addTrashListeners = function () {
     });
   });
 };
+cartIcon.addEventListener("click", () => {
+  cartModal.style.display = "block";
+});
 
 cartClose.addEventListener("click", () => {
   cartModal.style.display = "none";

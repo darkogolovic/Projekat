@@ -5,7 +5,6 @@ const fectData = async () => {
 };
 
 fectData().then((data) => {
-  const products = document.querySelector(".products");
   const productArray = Object.values(data).flatMap((category) => category);
   initialState(productArray);
   showMoreFunction();
@@ -18,7 +17,7 @@ const initialState = (productArray) => {
     for (podk in product) {
       if (Array.isArray(product[podk])) {
         product[podk].forEach((item) => {
-          products.innerHTML += `<article class="product ${item.category}" data-id="${item.id}">
+          products.innerHTML += `<article class="product ${item.category} all" data-id="${item.id}">
             <div class="img-holder">
               <img src="${item.images[0]}" alt="${item.brand}" class="product-img"/>
             </div>
@@ -61,6 +60,7 @@ filterButtons.forEach((button) => {
         product.classList.add("show");
       } else {
         product.classList.remove("show");
+        product.classList.remove("all");
       }
     });
     document.querySelectorAll(".product").forEach((product) => {
@@ -78,13 +78,18 @@ filterButtons.forEach((button) => {
 const showMoreFunction = () => {
   const showMore = document.querySelector(".show-more");
   showMore.addEventListener("click", () => {
-    const visibleProducts = document.querySelectorAll(".product.show");
-
     const hiddenProducts = document.querySelectorAll(".product:not(.show)");
-    const productCategory = document.querySelector(".product").classList[1];
     let displayCount = 0;
     hiddenProducts.forEach((product) => {
-      if (displayCount < 3) {
+      if (
+        (displayCount < 3 &&
+          product.classList[1] ===
+            document
+              .querySelector(".button-value.active")
+              .textContent.toLowerCase()) ||
+        product.classList[2] === "all"
+      ) {
+        console.log("da");
         product.classList.add("show");
         displayCount++;
       } else {
@@ -94,26 +99,11 @@ const showMoreFunction = () => {
   });
 };
 
-const showMoreBtn = document.querySelector(".show-more");
-
-showMoreBtn.addEventListener("click", () => {
-  const productsSection = document.querySelector(".products-section");
-});
-
 // Single product script
 
 const openSingleProduct = async (e) => {
   const productData = await fectData();
   const productId = e.target.getAttribute("data-id");
-  console.log(
-    "All product IDs:",
-    Object.values(productData).flatMap((category) =>
-      Object.values(category).flatMap((item) =>
-        item.flatMap((subitem) => subitem.id)
-      )
-    )
-  );
-  console.log("Trying to find product with ID:", productId);
   const productArray = Object.values(productData).flatMap((category) =>
     Object.values(category).flatMap((subcategory) => subcategory)
   );
@@ -143,10 +133,13 @@ const searchInput = document.querySelector("#search-input");
 searchInput.addEventListener("input", (e) => {
   const searchValue = e.target.value.toLowerCase();
   const products = document.querySelectorAll(".product");
+
   products.forEach((product) => {
+    product.classList.add("all");
     const productName = product.querySelector(".product-name").textContent;
     if (productName.toLowerCase().includes(searchValue)) {
       product.classList.add("show");
+      console.log(productName);
     } else {
       product.classList.remove("show");
     }
