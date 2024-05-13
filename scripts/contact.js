@@ -20,7 +20,6 @@ submitBtn.addEventListener("click", (e) => {
   inputEmail.value = "";
   inputMessage.value = "";
   setTimeout(() => {
-    console.log("hello");
     messageSent.classList.remove("show");
     messageSent.classList.add("hide");
   }, 3000);

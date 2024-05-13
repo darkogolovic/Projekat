@@ -95,6 +95,7 @@ header {
 .cart-icon {
   display: inline-block;
   text-align: right;
+  position: relative;
 }
 
 .cart-icon::after {
@@ -258,6 +259,13 @@ footer {
   }
   .logo-container {
     width: 80px;
+  }
+  .cart-icon::after {
+    width: 20%;
+    border: none;
+    position: absolute;
+    left: 55%;
+    top: 0;
   }
 }
 

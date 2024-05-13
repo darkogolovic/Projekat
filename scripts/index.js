@@ -89,7 +89,6 @@ const showMoreFunction = () => {
               .textContent.toLowerCase()) ||
         product.classList[2] === "all"
       ) {
-        console.log("da");
         product.classList.add("show");
         displayCount++;
       } else {
@@ -111,7 +110,6 @@ const openSingleProduct = async (e) => {
   productArray.forEach((product) => {
     if (product.id == productId) {
       selectedProduct = product;
-      console.log("Selected product:", selectedProduct);
     }
   });
 

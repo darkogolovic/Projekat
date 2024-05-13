@@ -3,7 +3,6 @@ const productDataString = urlParams.get("product");
 
 const productData = JSON.parse(decodeURIComponent(productDataString));
 
-// Desturktuiranje podataka
 const { brand, model, price, sizes, images } = productData;
 const articleContainer = document.querySelector(".article-container");
 
@@ -118,7 +117,6 @@ const addTrashListeners = function () {
       console.log(count);
       if (count <= 0) {
         count = 0;
-        cartItem.innerHTML = `<h2>Your cart is empty</h2>`;
       }
       totalPrice.innerHTML = "&euro;" + " " + count;
 
