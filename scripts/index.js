@@ -4,11 +4,13 @@ const fectData = async () => {
   return data;
 };
 
-fectData().then((data) => {
-  const productArray = Object.values(data).flatMap((category) => category);
-  initialState(productArray);
-  showMoreFunction();
-});
+fectData()
+  .then((data) => {
+    const productArray = Object.values(data).flatMap((category) => category);
+    initialState(productArray);
+    showMoreFunction();
+  })
+  .catch((error) => console.error("Nije pronadjen fajl", error));
 
 const initialState = (productArray) => {
   let prodSum = 0;
