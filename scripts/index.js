@@ -45,6 +45,7 @@ const initialState = (productArray) => {
 };
 
 const filterButtons = document.querySelectorAll(".button-value");
+
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     let counter = 0;
@@ -60,7 +61,6 @@ filterButtons.forEach((button) => {
         product.classList.add("show");
       } else {
         product.classList.remove("show");
-        product.classList.remove("all");
       }
     });
     document.querySelectorAll(".product").forEach((product) => {
@@ -75,24 +75,21 @@ filterButtons.forEach((button) => {
     });
   });
 });
+
 const showMoreFunction = () => {
   const showMore = document.querySelector(".show-more");
   showMore.addEventListener("click", () => {
     const hiddenProducts = document.querySelectorAll(".product:not(.show)");
     let displayCount = 0;
     hiddenProducts.forEach((product) => {
-      if (
-        (displayCount < 3 &&
-          product.classList[1] ===
-            document
-              .querySelector(".button-value.active")
-              .textContent.toLowerCase()) ||
-        product.classList[2] === "all"
-      ) {
-        product.classList.add("show");
-        displayCount++;
-      } else {
-        product.classList.remove("show");
+      const activeFilter = document
+        .querySelector(".button-value.active")
+        .textContent.toLowerCase();
+      if (activeFilter === "all" || product.classList.contains(activeFilter)) {
+        if (displayCount < 3) {
+          product.classList.add("show");
+          displayCount++;
+        }
       }
     });
   });
